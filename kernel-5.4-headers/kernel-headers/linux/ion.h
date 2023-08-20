@@ -10,7 +10,7 @@
 
 #include <linux/ioctl.h>
 #include <linux/types.h>
-
+typedef int ion_user_handle_t;
 /**
  * ion_heap_types - list of all possible types of heaps that Android can use
  *
