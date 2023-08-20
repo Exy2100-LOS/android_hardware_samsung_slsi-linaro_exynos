@@ -73,5 +73,8 @@ cc_library_shared {
 		"libgralloctypes",
 		"libdrm",
 	],
+	include_dirs: [
+		"hardware/samsung_slsi-linaro/exynos/include",
+	],
 	export_include_dirs: ["libGralloc4Wrapper/include"]
 }

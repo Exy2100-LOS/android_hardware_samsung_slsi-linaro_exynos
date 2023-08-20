@@ -45,6 +45,10 @@ ifeq ($(BOARD_USES_EXYNOS_GRALLOC_VERSION), 3)
 common_exynos_dirs += \
     gralloc3
 endif
+ifeq ($(BOARD_USES_EXYNOS_GRALLOC_VERSION), 4)
+common_exynos_dirs += \
+    gralloc4
+endif
 endif
 
 ifeq ($(BOARD_USE_ALP_AUDIO), true)
@@ -104,6 +108,10 @@ endif
 ifeq ($(BOARD_USES_EXYNOS_GRALLOC_VERSION), 3)
 common_exynos_dirs += \
     gralloc3
+endif
+ifeq ($(BOARD_USES_EXYNOS_GRALLOC_VERSION), 4)
+common_exynos_dirs += \
+    gralloc4
 endif
 endif
 
